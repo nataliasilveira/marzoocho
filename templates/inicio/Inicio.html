@@ -3,11 +3,15 @@
  
                     <head>
                       <title>Salimos.com</title>
+                        <link rel="stylesheet" href ="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+                         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
                         <link rel="stylesheet" href="{% static 'css/estilo 1.css' %}">
 
                     </head>
             <body>
-            
+
+
+
             
 
                          <div id= "superior">
@@ -50,7 +54,14 @@
                                                   <li><a href= "#EnFamilia">Paseos</a></li><br><br>
                                                   <li><a href= "#EnFamilia">Lugares turisticos</a></li>
                                       {% block content %}
-                                          </ul>
+                                             </ul>
+                                          <div class="menu-title_2nd">
+                                              <a href="{% url 'Cinellama' %}">{% trans "Cine" %}</a>
+
+                                          </div>
+
+
+
 
 
                                     </div>
@@ -60,8 +71,7 @@
                                                   <li><a href= "#">Festivales</a></li><br><br>
                                                   <li><a href= "#">Criollas</a></li><br><br>
                                                   <li><a href= "#">Gastronomia</a></li><br><br>
-                                                 <li><a href="#">Cine</a></li><br><br>
-
+                                                 <li><a href="{% url 'Cinellama' %}">{% trans "Cine" %}Cine</a></li><br><br>
                                                   <li><a href= "#">Teatro</a></li><br><br>
                                                     <li><a href= "#">Toques</a></li><br><br>
                                                   <li><a href= "#">Boliches</a></li><br><br>
@@ -69,8 +79,9 @@
                                     </div>
                                   {% endblock %}
                                   <div>
-                                    <a href="{% url 'llamarcine' %}">{% trans "cine" %}</a>
-                                      </div>
+
+
+                                   </div>
                                   <div id="marco3"> <br><br>
                                       <h2>Departamentos</h2><br><br>
                                             <ul>

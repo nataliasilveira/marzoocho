@@ -9,7 +9,7 @@ def inicio(request):
 def cine_list(request):
     db = sqlite3.connect(database='Salimos.db')
     cursor = db.cursor()
-    cursor.execute("Select   Funcion, Fecha, Hora from Funiciones")
-    llamarcine = cursor.fetchall()
+    cursor.execute("Select Funcion, Fecha, Hora, FotoFuncion  from Funiciones")
+    Funcion = cursor.fetchall()
     db.close()
-    return render_to_response('Cine/Cine.html', {'llamarcine': llamarcine})
+    return render_to_response('Cine/Cine.html', {'Funcion': Funcion})
