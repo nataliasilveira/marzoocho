@@ -1,0 +1,100 @@
+{% load static %} {% load staticfiles %} {% load i18n %}
+<html lang="ES">
+ 
+                    <head>
+                      <title>Salimos.com</title>
+                        <link rel="stylesheet" href="{% static 'css/estilo 1.css' %}">
+
+                    </head>
+            <body>
+            
+            
+
+                         <div id= "superior">
+
+                                        <div> <br><br>
+                                     </div>
+                          <h1><i>Salimos</i></h1><br><br>
+                              <div style= "text-align: right" >
+                                <form name="ejemplo" action="" method="POST">
+                                   Buscar <label>
+                                    <input type="search" name="busqueda">
+                                </label>
+                                    <input type="submit" value= Enviar>
+                                </form>
+                              </div>
+                          </div>
+  
+
+                                <div id="columnaderecha">
+                                  <div style= "text-align: center" ><br><br>
+                                    <--iframe width="380" height="280" src="https://www.youtube.com/embed/NUl_XVlIzkk?controls=0" frameborder="0"
+                                            encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div><br><br>
+                                </div>
+                              <div id="columna"><br><br>
+                                <h2> Buscar por:</h2><br><br>
+                                    <ul>
+                                        <li><a href="#marco1">Mi evento</a></li><br><br>
+                                        <li><a href="#marco2">Categorias</a></li><br><br>
+                                        <li><a href="#marco3">Departamentos</a></li><br><br>
+                                      </ul>
+                              </div>
+                                  <div id="contenido">
+                                    <div id="marco1"><br><br>
+                                            <h2>Mi evento</h2><br><br>
+                                              <ul>
+                                                  <li><a href= "#EnFamilia">En Familia</a></li><br><br>
+                                                  <li><a href= "#EnFamilia">Con amigos</a></li><br><br>
+                                                  <li><a href= "#EnFamilia">Para ninos</a></li><br><br>
+                                                  <li><a href= "#EnFamilia">Paseos</a></li><br><br>
+                                                  <li><a href= "#EnFamilia">Lugares turisticos</a></li>
+                                      {% block content %}
+                                          </ul>
+
+
+                                    </div>
+                                        <div id="marco2"><br><br>
+                                          <h2>Categorias</h2><br><br>
+                                              <ul>
+                                                  <li><a href= "#">Festivales</a></li><br><br>
+                                                  <li><a href= "#">Criollas</a></li><br><br>
+                                                  <li><a href= "#">Gastronomia</a></li><br><br>
+                                                 <li><a href="#">Cine</a></li><br><br>
+
+                                                  <li><a href= "#">Teatro</a></li><br><br>
+                                                    <li><a href= "#">Toques</a></li><br><br>
+                                                  <li><a href= "#">Boliches</a></li><br><br>
+                                              </ul>
+                                    </div>
+                                  {% endblock %}
+                                  <div>
+                                    <a href="{% url 'llamarcine' %}">{% trans "cine" %}</a>
+                                      </div>
+                                  <div id="marco3"> <br><br>
+                                      <h2>Departamentos</h2><br><br>
+                                            <ul>
+                                              <li><a href= "#Departamentos"> Artigas</a></li><br>
+                                              <li><a href= "#Departamentos"> Canelones</a></li><br>
+                                              <li><a href= "#Departamentos"> Cerro Largo</a></li><br>
+                                              <li><a href= "#Departamentos"> Colonia</a></li><br>
+                                              <li><a href= "#Departamentos"> Durazno</a></li><br>
+                                              <li><a href= "#Departamentos"> Flores</a></li><br>
+                                              <li><a href= "#Departamentos"> Florida</a></li><br>
+                                              <li><a href= "#Departamentos"> Lavalleja</a></li><br>
+                                              <li><a href= "#Departamentos"> Maldonado</a></li><br>
+                                              <li><a href= "#Departamentos"> Montevideo</a></li><br>
+                                              <li><a href= "#Departamentos"> Paysandu</a></li><br>
+                                              <li><a href= "#Departamentos"> Rio Negro</a></li><br>
+                                               <li><a href= "#Departamentos"> Rivera</a></li><br>
+                                              <li><a href= "#Departamentos"> Rocha</a></li><br>
+                                             <li><a href= "#Departamentos"> Salto</a></li><br>
+                                              <li><a href= "#Departamentos"> San Jose</a></li><br>
+                                              <li><a href= "#Departamentos"> Soriano</a></li><br>
+                                             <li><a href= "#Departamentos"> Tacuarembo</a></li><br>
+                                             <li><a href= "#Departamentos"> Treinta y Tres</a></li><br>
+                                            </ul>
+                                  </div>
+                                  </div>
+            </body>
+</html>
