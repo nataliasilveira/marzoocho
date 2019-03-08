@@ -5,15 +5,42 @@
 	                    <title>Funciones</title>
                 </head>
                 <body>
-                            <table>
-                                {% for Funcion in Funcion %}
-                                    <tr>{{ Funcion }}</tr>
-                                {% endfor %}
-                                <td>6</td>
-                                <td>Hola</td>
-                                <td>Holaa</td>
-                            </table>
-                {{ Funcion }}
+                        <table class="steelBlueCols">
+			                <thead>
+				                <tr>
+					                <th>Funcion</th>
+                                    <th>Fecha</th>
+					                <th>Lugar</th>
+					                <th>Horario</th>
+				                </tr>
+			                </thead>
+			                <tbody>
+					            <tr>
+						            <td>{{ Funcion }}</td>
+						            <td>{{ Fecha }}</td>
+						            <td>cell3_1</td>
+						            <td>cell4_1</td>
+					            </tr>
+                                <tr>
+                                    <td>{{ Fecha}}</td>
+                                    <td>{{ Nombre }}</td>
+                                    <td>cell3_2</td>
+                                    <td>cell4_2</td>
+                                </tr>
+                                <tr>
+                                    <td>cell1_3</td>
+                                    <td>cell2_3</td>
+                                    <td>cell3_3</td>
+                                    <td>cell4_3</td>
+                                </tr>
+                                <tr>
+                                    <td>cell1_4</td>
+                                    <td>cell2_4</td>
+                                    <td>cell3_4</td>
+                                    <td>cell4_4</td>
+                                </tr>
+                            </tbody>
+		                </table>
                 </body>
 {% endblock %}
 </html>

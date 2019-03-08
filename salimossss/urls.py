@@ -23,4 +23,5 @@ urlpatterns = [
     path('', inicio, name='inicio'),
     path('Cine', cine_list, name='Cinellama'),
 
+
 ]

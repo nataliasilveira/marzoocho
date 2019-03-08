@@ -1,0 +1,101 @@
+html  {
+  font: normal 13px arial,helvetica,sans-serif;
+  }
+   
+h1  {
+  text-align: center;
+  margin-top: 8px;
+  background-color: orange;
+  font-family: "https://pin.it/qzgyct44yb4g27";
+  src: url("https://pin.it/qzgyct44yb4g27");
+  font-size: 90px;
+  top: 500px;
+}
+   
+h2  {
+  text-align: center;
+  color: orange;
+  text-decoration: underline;
+  font-size: 20px;
+  }
+ 
+ul {
+  list-style: circle;
+  color: rgb(128, 89, 18);
+  text-decoration: underline;
+  text-size-adjust: 20px;
+  }
+   
+ul li a {
+  color: rgb(194, 129, 10);
+  text-decoration: none;
+  font-weight: bold;
+  list-style: circle;
+  }
+   
+ul li a:hover {
+  color: rgb(0, 0, 209);
+  }
+   
+p {
+  color: #456;
+  }
+   
+/* Capas del ejemplo  */
+ 
+div#columna {
+  border: solid 0px rgb(204, 42, 42);
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  width: 170px;
+  height: 590px;
+  background-image: url("https://i.pinimg.com/originals/9b/c9/8f/9bc98f55db5737c6b9601ea215f14467.jpg");
+  font-size: 15px;
+}
+ 
+div#contenido {
+  border: solid 0px #ccc;
+  position: absolute;
+  overflow: hidden;
+  left: 170px;
+  top: 150px;
+  width: 580px;
+  height: 590px;
+  padding: 0 51px;
+  background-image: url("https://image.freepik.com/vector-gratis/fondo-luminoso-puntos_1055-3132.jpg");
+  text-align: center;
+  
+}
+ 
+div#marco1, div#marco2, div#marco3, div#enfamilia {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+}
+
+div#columnaderecha {
+  border: solid 0px rgb(204, 42, 42);
+  position: absolute;
+  left: 850px;
+  top: 150px;
+  width: 415px;
+  height: 590px;
+  background-image: url("https://i.pinimg.com/originals/9b/c9/8f/9bc98f55db5737c6b9601ea215f14467.jpg")
+}
+
+div#superior {
+  border: solid 0px rgb(204, 42, 42);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1265px;
+  height: 150px;
+  background-image: url("https://i.pinimg.com/originals/9b/c9/8f/9bc98f55db5737c6b9601ea215f14467.jpg")
+}
+
+div#buscador {
+
+border: orange;
+background-color: gold;
+}
