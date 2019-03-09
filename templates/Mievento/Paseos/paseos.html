@@ -1,0 +1,32 @@
+{% load static %}{% load staticfiles %}{% load i18n %}
+<html lang="Es">
+			<head>
+                     <link rel="stylesheet" href ="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+                     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+                     <link rel="stylesheet" href="{% static 'mievento/paseos/paseos.css' %}">
+				<title>Paseos</title>
+			</head>
+	<body>
+		<div class="datagrid">
+			<table>
+				<thead>
+
+					<tr>
+						<th>Nombre</th>
+						<th>Direccion</th>
+						<th>Barrio</th>
+					</tr>
+				</thead>
+				<tbody>
+                {% for Lugares in Lugares %}
+					<tr>
+						<td>{{ Lugares.0 }}</td>
+						<td>{{Lugares.1  }}</td>
+						<td>{{ Lugares.2 }}</td>
+					</tr>
+                {% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

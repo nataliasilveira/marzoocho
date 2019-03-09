@@ -1,0 +1,38 @@
+{% load staticfiles %}{% load static %}{% load i18n %}
+<html lang="Es">
+		    <head>
+                <link rel="stylesheet" href ="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+                <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+                <link rel="stylesheet" href="{% static 'mievento/espctaculos/espec.css' %}">
+			    <title>Espectaculos al aire libre</title>
+		    </head>
+    <body>
+		    <div class="datagrid">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Detalle</th>
+                <th>Ciudad</th>
+              </tr>
+            </thead>
+          <tbody>
+          {% for Evento in Evento %}
+            <tr>
+              <td>{{ Evento.0 }}</td>
+              <td>{{ Evento.1 }}</td>
+              <td>{{ Evento.2 }}</td>
+            </tr>
+          {% endfor %}
+            <tr class="alt">
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+              <td>data</td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
