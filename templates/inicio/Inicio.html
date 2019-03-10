@@ -1,9 +1,12 @@
 {% load static %} {% load staticfiles %} {% load i18n %}
 <html lang="ES">
- 
+<div id="fb-root"></div>
+<script async defer src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>"<br><br>
+
+
   <head>
   <title>Salimos.com</title>
-   
+
 <!-- lo siguiente elimina la puntuación delante de los botones de la pagina Romina-->
 
 <style>
@@ -12,7 +15,7 @@
   }
 </style>
 
-   
+
   <link rel="stylesheet" href ="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="{% static 'estilo.css' %}">
@@ -28,33 +31,26 @@
         <h1><i>Salimos</i></h1><br><br>
 
 
-
-        <div style= "text-align: right">
-            <form name="ejemplo" action="" method="POST">
-              Buscar <input type="search" name="busqueda">
-              <input type="submit" value= Enviar>
-            </form>
-        </div>
-
-
-
-
-
             <div id="columnaderecha">
                 <div style= "text-align: center" ><br><br>
                 <iframe width="380" height="280" src="https://www.youtube.com/embed/NUl_XVlIzkk?controls=0" frameborder="0" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div><br><br><br><br><br>
 
 
+<!-- buscador -->
+                <div style= "text-align: center">
+                    <form name="ejemplo" action="" method="POST">
+                      Buscar <input type="search" name="busqueda">
+                      <input type="submit" value= Enviar>
+                    </form>
+                </div><br><br><br>
 
+<!-- boton de compartir facebook-->
 
-
-                <div id="fb-root"></div>
-                <script async defer src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.2"></script>"<br><br>
-
-                <div class="fb-like" data-href="https://www.facebook.com/Salimos-247878679479017/" data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div><br><br><br>
-
-                </div>
+            <div class="fb-like" data-href="https://www.facebook.com/Salimos-247878679479017/" data-layout="standard" data-
+                action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+            </div>
+        
             <div id="columna"><br><br>
                 <h2> Buscar por:</h2><br><br>
                 <ul>
@@ -64,7 +60,14 @@
 
                      <li><a href="#marco3">Departamentos</a></li><br><br>
                 </ul>
+                <div style="text-align-last: center">
+                    <p> Deja tu opinion </p>
+                    <textarea name="mensaje" placeholder="Comparte tu experiencia"></textarea>
+                    <p><input type="submit" value="Enviar mensaje"></p>
+                </div>
             </div>
+
+
 
         <div id="contenido">
             <div id="marco1"><br><br>
@@ -81,45 +84,40 @@
             <div id="marco2"><br><br>
                 <h2>Categorias</h2><br><br>
                 <ul>
-                    <li><a href= "#Festivales">Festivales</a></li><br><br>
-                    <li><a href= "#Festivales">Criollas</a></li><br><br>
-                    <li><a href= "#Festivales">Gastronomia</a></li><br><br>
-                    <li><a href= "{% url 'Cinellama' %}">Cine</a></li><br><br>
-                    <li><a href= "#Festivales">Teatro</a></li><br><br>
-                    <li><a href= "#Festivales">Toques</a></li><br><br>
-                    <li><a href= "#Festivales">Boliches</a></li><br><br>
-                    <li><a href= "#Festivales">Eventos artisticos y deportivos</a></li><br><br>
+                    <li><a href= "#Festivales">Festivales</a></li><br>
+                    <li><a href= "#Festivales">Criollas</a></li><br>
+                    <li><a href= "#Festivales">Gastronomia</a></li><br>
+                    <li><a href= "{% url 'Cinellama' %}">Cine</a></li><br>
+                    <li><a href= "#Festivales">Teatro</a></li><br>
+                    <li><a href= "#Festivales">Toques</a></li><br>
+                    <li><a href= "#Festivales">Boliches</a></li><br>
+                    <li><a href= "#Festivales">Eventos artisticos y deportivos</a></li><br>
                 </ul>
             </div>
         <div id="marco3"> <br><br>
                 <h2>Departamentos</h2><br><br>
                 <ul>
-                    <li><a href= "#Departamentos"> Artigas</a></li><br>
-                    <li><a href= "#Departamentos"> Canelones</a></li><br>
-                    <li><a href= "#Departamentos"> Cerro Largo</a></li><br>
-                    <li><a href= "#Departamentos"> Colonia</a></li><br>
-                    <li><a href= "#Departamentos"> Durazno</a></li><br>
-                    <li><a href= "#Departamentos"> Flores</a></li><br>
-                    <li><a href= "#Departamentos"> Florida</a></li><br>
-                    <li><a href= "#Departamentos"> Lavalleja</a></li><br>
-                    <li><a href= "#Departamentos"> Maldonado</a></li><br>
-                    <li><a href= "#Departamentos"> Montevideo</a></li><br>
-                    <li><a href= "#Departamentos"> Paysandu</a></li><br>
-                    <li><a href= "#Departamentos"> Rio Negro</a></li><br>
-                    <li><a href= "#Departamentos"> Rivera</a></li><br>
-                    <li><a href= "#Departamentos"> Rocha</a></li><br>
-                    <li><a href= "#Departamentos"> Salto</a></li><br>
-                    <li><a href= "#Departamentos"> San Jose</a></li><br>
-                    <li><a href= "#Departamentos"> Soriano</a></li><br>
-                    <li><a href= "#Departamentos"> Tacuarembo</a></li><br>
-                    <li><a href= "#Departamentos"> Treinta y Tres</a></li><br>
+                    <li><a href= "#Departamentos"> Artigas</a></li>
+                    <li><a href= "#Departamentos"> Canelones</a></li>
+                    <li><a href= "#Departamentos"> Cerro Largo</a></li>
+                    <li><a href= "#Departamentos"> Colonia</a></li>
+                    <li><a href= "#Departamentos"> Durazno</a></li>
+                    <li><a href= "#Departamentos"> Flores</a></li>
+                    <li><a href= "#Departamentos"> Florida</a></li>
+                    <li><a href= "#Departamentos"> Lavalleja</a></li>
+                    <li><a href= "#Departamentos"> Maldonado</a></li>
+                    <li><a href= "#Departamentos"> Montevideo</a></li>
+                    <li><a href= "#Departamentos"> Paysandu</a></li>
+                    <li><a href= "#Departamentos"> Rio Negro</a></li>
+                    <li><a href= "#Departamentos"> Rivera</a></li>
+                    <li><a href= "#Departamentos"> Rocha</a></li>
+                    <li><a href= "#Departamentos"> Salto</a></li>
+                    <li><a href= "#Departamentos"> San Jose</a></li>
+                    <li><a href= "#Departamentos"> Soriano</a></li>
+                    <li><a href= "#Departamentos"> Tacuarembo</a></li>
+                    <li><a href= "#Departamentos"> Treinta y Tres</a></li>
                 </ul>
-        </div>
+         </div>
 
-        <div style="text-align-last: center">
-            <p> Deja tu opinion </p>
-            <textarea name="mensaje" placeholder="Comparte tu experiencia"></textarea>
-            <p><input type="submit" value="Enviar mensaje"></p>
-        </div>
   </body>
 </html>
