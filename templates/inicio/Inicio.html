@@ -7,7 +7,7 @@
   <head>
   <title>Salimos.com</title>
 
-<!-- lo siguiente elimina la puntuación delante de los botones de la pagina Romina-->
+<!-- lo siguiente elimina la puntuación delante de los botones de la pagina. Romina-->
 
 <style>
   ul, li {
@@ -31,26 +31,26 @@
         <h1><i>Salimos</i></h1><br><br>
 
 
-            <div id="columnaderecha">
-                <div style= "text-align: center" ><br><br>
+            <div id="columnaderecha"><br><br>
+
+              <div style= "text-align: center">
+                  <form name="ejemplo" action="" method="POST">
+                    Buscar <input type="search" name="busqueda">
+                    <input type="submit" value= Enviar>
+                  </form>
+              </div><br><br><br>
+
+                <div style= "center" ><br><br>
                 <iframe width="380" height="280" src="https://www.youtube.com/embed/NUl_XVlIzkk?controls=0" frameborder="0" accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><br><br><br><br><br>
-
-
-<!-- buscador -->
-                <div style= "text-align: center">
-                    <form name="ejemplo" action="" method="POST">
-                      Buscar <input type="search" name="busqueda">
-                      <input type="submit" value= Enviar>
-                    </form>
-                </div><br><br><br>
+              </div><br><br><br>
 
 <!-- boton de compartir facebook-->
 
             <div class="fb-like" data-href="https://www.facebook.com/Salimos-247878679479017/" data-layout="standard" data-
                 action="like" data-size="large" data-show-faces="true" data-share="true"></div>
             </div>
-        
+
+
             <div id="columna"><br><br>
                 <h2> Buscar por:</h2><br><br>
                 <ul>
@@ -70,6 +70,7 @@
 
 
         <div id="contenido">
+                           
             <div id="marco1"><br><br>
                 <h2>Mi evento</h2><br><br>
                 <ul>
@@ -81,6 +82,7 @@
                     <li><a href= "{% url 'aire' %}"Espectaculos al aire libre></a></li><br><br>
                 </ul>
             </div>
+                                                   
             <div id="marco2"><br><br>
                 <h2>Categorias</h2><br><br>
                 <ul>
@@ -94,6 +96,7 @@
                     <li><a href= "#Festivales">Eventos artisticos y deportivos</a></li><br>
                 </ul>
             </div>
+                                              
         <div id="marco3"> <br><br>
                 <h2>Departamentos</h2><br><br>
                 <ul>
@@ -117,7 +120,6 @@
                     <li><a href= "#Departamentos"> Tacuarembo</a></li>
                     <li><a href= "#Departamentos"> Treinta y Tres</a></li>
                 </ul>
-         </div>
-
+       </div>
   </body>
 </html>
