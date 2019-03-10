@@ -51,7 +51,7 @@ div#columna {
   width: 250px;
   height: 590px;
   background-image: url("https://i.pinimg.com/originals/9b/c9/8f/9bc98f55db5737c6b9601ea215f14467.jpg");
-  font-size: 15px;
+  font-size: 18px;
 }
 
 div#contenido {
@@ -60,7 +60,7 @@ div#contenido {
   overflow: hidden;
   left: 240px;
   top: 150px;
-  width: 580px;
+  width: 590px;
   height: 620px;
   padding: 0 51px;
   background-image: url("https://image.freepik.com/vector-gratis/fondo-luminoso-puntos_1055-3132.jpg");
