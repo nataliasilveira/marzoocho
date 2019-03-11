@@ -12,9 +12,24 @@ def cine_list(request):
     cursor = db.cursor()
     cursor.execute("Select * from Funiciones")
     Funciones = cursor.fetchall()
-    Fecha = cursor.execute("Select Funiciones.Fecha from Funiciones")
     db.commit()
-    return render_to_response('Cine/Cine.html', {'Funciones': Funciones}, {'Fecha': Fecha})
+    return render_to_response('Cine/Cine.html', {'Funciones': Funciones})
+
+def festi_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Eventos where IdCategoria=4")
+    Festivales = cursor.fetchall()
+    db.commit()
+    return render_to_response('Festivales/Festivales.html', {'Festivales': Festivales})
+
+def crio_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Eventos where IdCategoria=1")
+    Criollas = cursor.fetchall()
+    db.commit()
+    return render_to_response('Criollas/Criollas.html', {'Criollas': Criollas})   
 
 
 def enfmilia_list(request):
