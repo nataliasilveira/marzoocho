@@ -47,6 +47,30 @@ def teatro_list(request):
     db.commit()
     return render_to_response('Teatros/Teatros.html', {'Teatros': Teatros})
 
+def toques_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Eventos where IdCategoria=6")
+    Toques = cursor.fetchall()
+    db.commit()
+    return render_to_response('Toques/Toques.html', {'Toques': Toques})
+
+def boli_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Lugares where IdCategoria=8")
+    Boliches = cursor.fetchall()
+    db.commit()
+    return render_to_response('Boliches/Boliches.html', {'Boliches': Boliches})
+
+def artdep_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Eventos where IdCategoria=10")
+    Artdep = cursor.fetchall()
+    db.commit()
+    return render_to_response('Artdep/Artdep.html', {'Artdep': Artdep})
+
 def enfmilia_list(request):
     db = sqlite3.connect(database='salimos.db')
     cursor = db.cursor()
