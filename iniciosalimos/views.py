@@ -31,6 +31,21 @@ def crio_list(request):
     db.commit()
     return render_to_response('Criollas/Criollas.html', {'Criollas': Criollas})   
 
+def gastro_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Lugares where IdCategoria=2")
+    Gastronomia = cursor.fetchall()
+    db.commit()
+    return render_to_response('Gastronomia/Gastronomia.html', {'Gastronomia': Gastronomia})
+
+def teatro_list(request):
+    db = sqlite3.connect(database='salimos.db')
+    cursor = db.cursor()
+    cursor.execute("Select * from Lugares where IdCategoria=5")
+    Teatros = cursor.fetchall()
+    db.commit()
+    return render_to_response('Teatros/Teatros.html', {'Teatros': Teatros})
 
 def enfmilia_list(request):
     db = sqlite3.connect(database='salimos.db')

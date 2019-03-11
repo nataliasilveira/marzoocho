@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from iniciosalimos.views import cine_list, festi_list, crio_list, conamigos_list, enfmilia_list,ninos_list, paseos_list,turismo_list, airlib_list
+from iniciosalimos.views import cine_list, festi_list, crio_list, gastro_list, teatro_list, conamigos_list, enfmilia_list,ninos_list, paseos_list,turismo_list, airlib_list
 from iniciosalimos.views import inicio
 
 urlpatterns = [
@@ -24,6 +24,8 @@ urlpatterns = [
     path('Cine', cine_list, name='Cinellama'),
     path('Festivales', festi_list, name='Festillama'),
     path('Criollas', crio_list, name='Criollama'),
+    path('Gastronomia', gastro_list, name='Gastrollama'),
+    path('Teatros', teatro_list, name='Teatrollama'),
     path('EnFamilia', enfmilia_list, name='familia'),
     path('Conamigos', conamigos_list, name='amigos'),
     path('ninos', ninos_list, name='ninos'),
